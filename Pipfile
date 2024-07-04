@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+proxy-list-scrapper = "*"
+pandas = "*"
+parsel = "*"
+cloudscraper = "*"
+urllib3 = "<=2"
+requests-html = "*"
+lxml = {extras = ["html_clean"], version = "*"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+cs_test = "pipenv run test_cs > test_cs.txt"
